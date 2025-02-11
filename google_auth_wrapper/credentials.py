@@ -1,9 +1,7 @@
 import os
 import requests
 
-from typing import List
 from google.oauth2.credentials import Credentials
-from google_auth_wrapper.auth import authenticate
 
 
 def _get_refresh_token(save_path: str):

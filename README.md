@@ -34,6 +34,7 @@ After the refresh token has been generated and stored, you just need to specify 
 ```python
 from google_auth_wrapper import credentials
 
+# returns a GoogleAuth credentials object which can be used to access the specified scopes
 creds = credentials(
     scopes=scopes,
     client="your_client_id",
