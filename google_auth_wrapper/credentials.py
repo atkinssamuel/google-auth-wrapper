@@ -39,6 +39,9 @@ def credentials(scopes=None, client=None, secret=None, path_to_refresh=None):
     if not secret:
         raise Exception("Client secret is required")
 
+    if not path_to_refresh:
+        raise Exception("Path to refresh token is required")
+
     r = _get_refresh_token(path_to_refresh)
 
     if not r:
